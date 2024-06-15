@@ -12,7 +12,7 @@ const AnimeCards = ({ anime }) => {
                         <img src={anime.images.jpg.image_url} alt="" className="h-36 w-36 ml-auto mr-auto object-cover" />
                     </figure>
                     <div className="flex-1 rounded-lg p-4 bg-gray-700">
-                        <div className='h-full flex flex-col items-start justify-around'>
+                        <div className='h-full flex flex-col gap-2 items-start justify-around'>
                             <h5 className="text-white text-2xl font-bold leading-none">
                                 {anime.name}
                             </h5>
@@ -27,7 +27,7 @@ const AnimeCards = ({ anime }) => {
                     </div>
                 </div>
                 <div className='flex justify-center items-center gap-2 px-4'>
-                    <div className='text-md text-slate-500 mr-2'>
+                    <div className='text-lg text-slate-500 mr-2'>
                         ❤️{anime.favorites}
                     </div>
                     <Link to={anime.url} target='_blank'>
