@@ -7,11 +7,11 @@ const AnimeCards = ({ anime }) => {
     return (
         <>
             <div className="bg-white rounded-lg m-h-64 p-2 transform hover:translate-y-2 hover:shadow-xl transition duration-300 flex flex-col sm:flex-row items-center justify-between group mb-2">
-                <div className='flex flex-col gap-2 md:flex-row flex-1'>
-                    <figure className="mr-2">
+                <div className='flex flex-col gap-2 md:flex-row flex-1 w-full'>
+                    <figure className="md:mr-2">
                         <img src={anime.images.jpg.image_url} alt="" className="h-36 w-36 ml-auto mr-auto object-cover" />
                     </figure>
-                    <div className="flex-1 rounded-lg p-4 bg-gray-700">
+                    <div className="w-full rounded-lg p-4 bg-gray-700">
                         <div className='h-full flex flex-col gap-2 items-start justify-around'>
                             <h5 className="text-white text-2xl font-bold leading-none">
                                 {anime.name}
