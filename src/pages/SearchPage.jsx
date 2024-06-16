@@ -70,12 +70,7 @@ const SearchPage = () => {
                     <img className='w-8 h-8' src={SearchIcon} alt="Search the anime character" />
                     <input onChange={(e) => setSearchItem(e.target.value)} value={searchItem} className='bg-transparent placeholder:text-white w-full outline-none text-xl placeholder:white placeholder:italic text-white' type="text" placeholder='Search your favourite anime character' />
                 </div>
-                {
-                    animes?.data.length
-                        ? <p className='text-gray-300 font-medium mt-6'>Total {totalAnimes} <span className='text-slate-50 font-bold'>{ }</span> matching anime characters found</p>
-                        : ""
-                }
-
+                <p className='text-gray-300 font-medium mt-6'>Total {animes?.data.length ? totalAnimes : 0} <span className='text-slate-50 font-bold'>{ }</span> matching anime characters found</p>
             </div>
 
             {/* Lower block  */}

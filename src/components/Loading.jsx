@@ -5,7 +5,7 @@ const Loading = () => {
     return (
         <div className=''>
             <div className='px-2 py-4 w-full backdrop-blur-lg bg-white flex flex-col items-center justify-center'>
-                <img className='w-56 h-56' src={Gif} alt="loading gif" />
+                <img className='w-48 h-48' src={Gif} alt="loading gif" />
                 <h1 className='text-2xl italic mt-2'>Loading your anime...</h1>
             </div>
         </div>
